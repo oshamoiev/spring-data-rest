@@ -23,8 +23,9 @@ public class Board {
     @JsonIgnore
     private Snowboarder snowboarder;
 
-    public String getName() {
-        return name;
+    @JsonIgnore
+    public Long getId() {
+        return id;
     }
 
     public void setId(Long id) {

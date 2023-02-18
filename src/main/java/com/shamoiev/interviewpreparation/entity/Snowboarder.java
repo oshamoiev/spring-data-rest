@@ -1,5 +1,6 @@
 package com.shamoiev.interviewpreparation.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.time.OffsetDateTime;
@@ -23,7 +24,7 @@ public class Snowboarder {
 //    @OneToMany(mappedBy = "snowboarder", fetch = FetchType.EAGER)
 //    private List<Board> boards;
 
-
+    @JsonIgnore
     public Long getId() {
         return id;
     }
@@ -48,6 +49,7 @@ public class Snowboarder {
         this.name = name;
     }
 
+    @JsonIgnore
     public String getPassword() {
         return password;
     }
