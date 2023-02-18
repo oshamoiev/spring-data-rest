@@ -18,9 +18,9 @@ services:
   adminer:
     container_name: adminer-test
     image: adminer
-    restart: always
+    restart: no
     ports:
-      - "8080:8080"
+      - "8088:8080"
 
 volumes:
   test-data:
