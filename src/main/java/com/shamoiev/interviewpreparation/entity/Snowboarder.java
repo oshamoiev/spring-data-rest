@@ -13,13 +13,11 @@ public class Snowboarder {
     @Column(nullable = false, unique = true)
     private String phoneNumber;
 
-    @Column
     private String name;
 
     @Column(nullable = false)
     private String password;
 
-    @Column
     private OffsetDateTime dateOfBirth;
 
 //    @OneToMany(mappedBy = "snowboarder", fetch = FetchType.EAGER)

@@ -7,15 +7,12 @@ import jakarta.persistence.*;
 public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
 
-    @Column
     private String name;
 
-    @Column
     private Integer length;
 
-    @Column
     private Integer width;
 
     @Column(nullable = false)
@@ -32,6 +29,10 @@ public class Board {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
