@@ -21,6 +21,9 @@ public class Snowboarder {
 
     private OffsetDateTime dateOfBirth;
 
+    @Transient
+    private String someField;
+
 //    @OneToMany(mappedBy = "snowboarder", fetch = FetchType.EAGER)
 //    private List<Board> boards;
 
