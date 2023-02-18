@@ -10,3 +10,8 @@ spring:
 #    properties:
 #      hibernate:
 #        format_sql: true
+
+  data:
+    rest:
+      detection-strategy: default
+      base-path: /api/v2
