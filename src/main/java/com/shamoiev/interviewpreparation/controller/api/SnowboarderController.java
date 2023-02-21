@@ -1,4 +1,4 @@
-package com.shamoiev.interviewpreparation.controller;
+package com.shamoiev.interviewpreparation.controller.api;
 
 import com.shamoiev.interviewpreparation.entity.Snowboarder;
 import com.shamoiev.interviewpreparation.service.SnowboarderService;
