@@ -5,13 +5,13 @@ services:
   test-postgres-db:
     container_name: test-postgres-db
     image: postgres:15.2
-    restart: always
+    restart: "no"
     environment:
       POSTGRES_DB: test-db
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - test-data:/var/lib/postgresql/data
 
